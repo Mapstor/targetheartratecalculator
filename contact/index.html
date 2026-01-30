@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Target Heart Rate Calculator</title>
+  <meta name="description" content="Contact Target Heart Rate Calculator with questions, feedback, bug reports, or feature requests. We typically respond within 48-72 hours.">
+  <meta property="og:title" content="Contact - Target Heart Rate Calculator">
+  <meta property="og:description" content="Contact Target Heart Rate Calculator with questions, feedback, bug reports, or feature requests. We typically respond within 48-72 hours.">
+  <meta property="og:url" content="https://targetheartratecalculator.org/contact/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact - Target Heart Rate Calculator">
+  <meta name="twitter:description" content="Contact Target Heart Rate Calculator with questions, feedback, bug reports, or feature requests.">
+  <link rel="canonical" href="https://targetheartratecalculator.org/contact/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://targetheartratecalculator.org/contact/#contactpage",
+        "name": "Contact Target Heart Rate Calculator",
+        "description": "Get in touch with questions, feedback, bug reports, or feature requests. We typically respond within 48-72 hours.",
+        "url": "https://targetheartratecalculator.org/contact/",
+        "isPartOf": {
+          "@id": "https://targetheartratecalculator.org/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://targetheartratecalculator.org/contact/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://targetheartratecalculator.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://targetheartratecalculator.org/contact/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header"><div class="container"><div class="header-inner">
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><span>Heart Rate Calculator</span></a>
+    <nav class="nav-desktop"><a href="/">Calculator</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/" class="active">Contact</a></nav>
+    <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div><nav class="nav-mobile"><a href="/">Calculator</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
+
+  <main><div class="container content-narrow">
+    <h1>Contact Us</h1>
+
+    <section class="content-section">
+      <p>Have a question, found a bug, or want to suggest a feature? We'd love to hear from you. Fill out the form below and it will open your email client with your message ready to send.</p>
+
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" class="form-grid" style="margin-top:1rem">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Your Name</label>
+            <input class="form-input" type="text" id="contact-name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Your Email</label>
+            <input class="form-input" type="email" id="contact-email" placeholder="jane@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-subject">Subject</label>
+          <select class="form-select" id="contact-subject">
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Bug Report">Bug Report</option>
+            <option value="Feature Request">Feature Request</option>
+            <option value="Feedback">Feedback</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-message">Message</label>
+          <textarea class="form-input" id="contact-message" rows="6" placeholder="Tell us what's on your mind..." required style="height:auto;padding:0.75rem 0.875rem;resize:vertical"></textarea>
+        </div>
+        <button type="submit" class="calculate-btn" style="margin-top:0.5rem">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+          Send Message
+        </button>
+      </form>
+      <script>
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.getElementById('contact-name').value.trim();
+        var email = document.getElementById('contact-email').value.trim();
+        var subject = document.getElementById('contact-subject').value;
+        var message = document.getElementById('contact-message').value.trim();
+        var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+        window.location.href = 'mailto:info@targetheartratecalculator.org?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      });
+      </script>
+    </section>
+
+    <section class="content-section">
+      <h2>What to Expect</h2>
+      <p>We read every message and aim to respond within <strong>48-72 hours</strong>. If your inquiry requires research or testing on our end, it may take slightly longer, but we'll acknowledge receipt and keep you updated.</p>
+      <p>For bug reports, we may follow up with additional questions to help us reproduce and fix the issue. For feature requests, while we can't implement every suggestion, we genuinely consider all feedback when planning updates.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Before You Contact Us</h2>
+      <p>Here are answers to some common questions we receive:</p>
+
+      <p><strong>"Is this calculator accurate?"</strong></p>
+      <p>Our calculator uses established formulas from exercise physiology research, including the <a href="/blog/max-heart-rate-formula/">Tanaka, Gulati, and HUNT formulas</a> for maximum heart rate estimation, and the <a href="/blog/karvonen-formula-explained/">Karvonen method</a> for personalized training zones. These are the same formulas used by fitness professionals and sports scientists. However, all heart rate formulas provide estimates based on population averages—individual maximum heart rates can vary by 10-20 BPM from calculated values. For the most accurate results, consider a supervised maximal exercise test. Learn more on our <a href="/about/">About page</a>.</p>
+
+      <p><strong>"Can I use this calculator on my website?"</strong></p>
+      <p>Linking to Target Heart Rate Calculator is welcome and appreciated—feel free to share our URL with your audience. If you'd like to embed the calculator directly on your website or integrate it into an app, please contact us first to discuss permission and proper attribution. Copying our content or code without permission is not allowed.</p>
+
+      <p><strong>"I found a bug"</strong></p>
+      <p>To help us fix the issue quickly, please include in your email:</p>
+      <ul>
+        <li>Your browser name and version (e.g., Chrome 120, Safari 17, Firefox 121)</li>
+        <li>Your device type (e.g., iPhone 14, Windows laptop, Android tablet)</li>
+        <li>Steps to reproduce the bug (what did you click or enter?)</li>
+        <li>What you expected to happen vs. what actually happened</li>
+        <li>Screenshots if possible</li>
+      </ul>
+
+      <p><strong>"I have a feature request"</strong></p>
+      <p>We welcome suggestions for new features, additional calculator tabs, or improvements to existing functionality. When submitting a feature request, it helps if you describe the problem you're trying to solve or the use case you have in mind. We review all suggestions and prioritize based on how many users would benefit.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Feedback Welcome</h2>
+      <p>We're always looking to make Target Heart Rate Calculator better. Whether you have ideas for new calculator features, suggestions for improving the user experience, corrections to our educational content, or just want to let us know the calculator helped you—we appreciate hearing from our users.</p>
+      <p>Your feedback directly influences how we prioritize updates and improvements. Many of the features in our current calculator came from user suggestions, and we're grateful for every piece of input we receive.</p>
+      <p>Thank you for using Target Heart Rate Calculator!</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Helpful Resources</h2>
+      <p>Before reaching out, these resources may answer your question:</p>
+      <div class="related-guides-grid">
+        <div class="related-guide-card">
+          <a href="/">Heart Rate Calculator</a>
+          <p>Calculate your max HR, target zones, and personalized training zones instantly.</p>
+        </div>
+        <div class="related-guide-card">
+          <a href="/blog/heart-rate-training-for-beginners/">HR Training for Beginners</a>
+          <p>New to heart rate training? Start here for a complete getting-started guide.</p>
+        </div>
+        <div class="related-guide-card">
+          <a href="/blog/max-heart-rate-formula/">Max Heart Rate Formulas</a>
+          <p>Understand which formula is best for your age, gender, and fitness level.</p>
+        </div>
+        <div class="related-guide-card">
+          <a href="/blog/karvonen-formula-explained/">Karvonen Formula Explained</a>
+          <p>Learn the advanced Heart Rate Reserve method for more personalized zones.</p>
+        </div>
+        <div class="related-guide-card">
+          <a href="/blog/">All Guides</a>
+          <p>Browse all 10 heart rate training guides covering zones, formulas, and more.</p>
+        </div>
+        <div class="related-guide-card">
+          <a href="/about/">About This Calculator</a>
+          <p>Learn about our methodology, the science behind the calculations, and limitations.</p>
+        </div>
+      </div>
+    </section>
+
+  </div></main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><span>Heart Rate Calculator</span></a><p>Free target heart rate and training zone calculator.</p></div>
+      <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Max Heart Rate</a></li><li><a href="/#panel-target">Target HR</a></li><li><a href="/#panel-zones">Training Zones</a></li><li><a href="/#panel-karvonen">Karvonen Method</a></li></ul></div>
+      <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/max-heart-rate-by-age/">Max HR by Age</a></li><li><a href="/blog/target-heart-rate-chart/">Target HR Chart</a></li><li><a href="/blog/karvonen-formula-explained/">Karvonen Formula</a></li></ul></div>
+      <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025-2026 Target Heart Rate Calculator. For informational purposes only—not medical advice.</p></div>
+  </div></footer>
+  <script src="/assets/js/calculator.js"></script>
+</body>
+</html>
